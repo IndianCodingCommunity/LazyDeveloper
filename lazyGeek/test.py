@@ -1,3 +1,3 @@
-import lazyGeek.core as lazyGeek
+import lazyGeek.core as LazyGeek
 
-print(lazyGeek.greet("Piyush"))
+print(LazyGeek.median(5, 4, 5, 6, 7, 100))
