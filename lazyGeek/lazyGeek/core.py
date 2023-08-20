@@ -111,6 +111,56 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 
+# Contributed by @namrataPb : github.com/namrataPb
+
+def fibonacci(n):
+    if n < 0:
+        return None
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Contributed by @namrataPb : github.com/namrataPb
+
+def uniqueValues(a):
+    unique = []
+    for i in a:
+        if i not in unique:
+            unique.append(i)
+    return unique
+
+# Contributed by @namrataPb : github.com/namrataPb
+
+def variance(*a):
+    mean = sum(a)/len(a)
+    variance = sum((i - mean) ** 2 for i in a) / len(a)
+    return variance
+
+# Contributed by @namrataPb : github.com/namrataPb
+
+def primeNumbers(n, start=1):
+    prime = []
+    for num in range(max(2, start), n + 1):
+        if all(num % i != 0 for i in range(2, num)):
+            prime.append(num)
+    return prime
+
+# Contributed by @namrataPb : github.com/namrataPb
+
+def gcd(a, b):
+    if (a == 0):
+        return b
+    return gcd(b % a, a)
+
+# Contributed by @namrataPb : github.com/namrataPb
+
+def lcm(a, b):
+    return (a / gcd(a, b)) * b
+
+
 class LazyGeek:
     def __init__(self, value):
         self.value = value
