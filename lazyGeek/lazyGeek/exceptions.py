@@ -1,0 +1,2 @@
+class LazyGeekError(Exception):
+    pass
